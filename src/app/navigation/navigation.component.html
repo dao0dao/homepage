@@ -1,0 +1,42 @@
+<nav>
+    <a
+        href="#"
+        class="link"
+    >
+        {{'Dao'| tag}}
+    </a>
+    <button
+        class="menu"
+        [ngClass]="{'menu--open': isOpen}"
+        (click)="toggleList()"
+    >
+        <div class="line line--top"></div>
+        <div class="line line--bot"></div>
+    </button>
+    <div
+        class="list"
+        [ngClass]="{'list--open': isOpen}"
+    >
+        <a
+            href="#about"
+            class="link"
+            (click)="hideList()"
+        >
+            {{'About me'|tag}}
+        </a>
+        <a
+            href="#portfolio"
+            class="link"
+            (click)="hideList()"
+        >
+            {{'Portfolio'|tag}}
+        </a>
+        <a
+            href="#contact"
+            class="link"
+            (click)="hideList()"
+        >
+            {{'Contact'|tag}}
+        </a>
+    </div>
+</nav>
