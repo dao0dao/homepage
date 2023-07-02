@@ -1,4 +1,9 @@
-import { Component, effect } from '@angular/core';
+import {
+  Component,
+  effect,
+  HostBinding,
+  ChangeDetectorRef,
+} from '@angular/core';
 import { NavigationService } from '../navigation/navigation.service';
 
 @Component({
@@ -7,11 +12,21 @@ import { NavigationService } from '../navigation/navigation.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  constructor(private navService: NavigationService) {
+  constructor(
+    private navService: NavigationService,
+    private cd: ChangeDetectorRef
+  ) {
     effect(() => {
-      this.navHeight = this.navService.navHeight$();
+      Promise.resolve().then(() => {
+        this.setHostHeight(this.navService.navHeight$());
+      });
     });
   }
+  @HostBinding('style.height') hostHeight: string | undefined;
 
-  navHeight: number = 0;
+  setHostHeight(height: number) {
+    if (height) {
+      this.hostHeight = 'calc(100vh - ' + height + 'px)';
+    }
+  }
 }
