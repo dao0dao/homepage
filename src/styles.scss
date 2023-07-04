@@ -50,6 +50,27 @@ body {
 .lighted {
     color: $lighted;
 }
+.green {
+    color: $green;
+}
+.blueDark {
+    color: $blueDark;
+}
+.blueLight {
+    color: $blueLight;
+}
+.red {
+    color: $red;
+}
+.yellowLight {
+    color: $yellowLight;
+}
+.yellowDark {
+    color: $yellowDark;
+}
+.purple {
+    color: $purple;
+}
 @media screen and (min-width: 992px) {
     .section {
         position: relative;

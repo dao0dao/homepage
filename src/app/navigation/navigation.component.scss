@@ -1,8 +1,10 @@
 @import "src/assets/colors.scss";
 :host {
-    position: sticky;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    opacity: 0.9;
+    opacity: 0.98;
+    width: 100vw;
     display: block;
     background-color: $navBackground;
 }

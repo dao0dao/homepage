@@ -1,5 +1,4 @@
 import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { NavigationService } from './navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,16 +6,9 @@ import { NavigationService } from './navigation.service';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-  constructor(private navService: NavigationService) {}
-  @ViewChild('nav') navDOM: ElementRef<HTMLElement> | undefined;
-  @HostListener('window:resize') onResize() {
-    this.navService.setNavHeight(this.navDOM?.nativeElement.clientHeight!);
-  }
-  isOpen: boolean = false;
+  constructor() {}
 
-  ngAfterViewInit() {
-    this.navService.setNavHeight(this.navDOM?.nativeElement.clientHeight!);
-  }
+  isOpen: boolean = false;
 
   toggleList() {
     this.isOpen = !this.isOpen;

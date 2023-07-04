@@ -1,0 +1,22 @@
+@import "src/assets/colors.scss";
+:host {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.container {
+    position: relative;
+    flex-basis: 80%;
+    min-height: 80%;
+    padding: 0 1rem;
+    border-left: 3px solid $lighted;
+    background-color: $background1;
+}
+.section{
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 992px) {
+    .container {
+        padding-left: 3rem;
+    }
+}
