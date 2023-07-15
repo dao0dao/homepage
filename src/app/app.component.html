@@ -1,3 +1,8 @@
-<app-navigation></app-navigation>
-<app-home></app-home>
-<app-about></app-about>
+<div
+    class="container"
+    [ngClass]="{'container--visible': isTranslationsReady}"
+>
+    <app-navigation></app-navigation>
+    <app-home></app-home>
+    <app-about></app-about>
+</div>

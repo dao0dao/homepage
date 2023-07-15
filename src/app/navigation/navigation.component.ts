@@ -1,4 +1,5 @@
-import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, NgZone, ApplicationRef } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-navigation',
@@ -6,7 +7,7 @@ import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-  constructor() {}
+  constructor(public lang: LanguageService) {}
 
   isOpen: boolean = false;
 
@@ -16,5 +17,9 @@ export class NavigationComponent {
 
   hideList() {
     this.isOpen = false;
+  }
+
+  changeLanguage(lang: string) {
+    this.lang.changeLanguage(lang);
   }
 }

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { TagPipe } from './tag.pipe';
+import { TagPipe } from './pipes/tag.pipe';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 @NgModule({
   declarations: [
@@ -13,12 +15,11 @@ import { AboutComponent } from './about/about.component';
     NavigationComponent,
     TagPipe,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    TranslatePipe,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
