@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 @import "src/assets/colors.scss";
 :root {
+    scroll-behavior: smooth;
     font-size: 18px;
+    font-weight: 400;
+    scrollbar-width: thin;
+    scrollbar-color: $background1 $background2;
 }
 * {
     margin: 0;
@@ -14,13 +17,9 @@
     }
 }
 body {
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    scroll-behavior: smooth;
     padding: 0 calc((100vw - 1920px) / 2);
     background-color: $black;
-    font-family: "Niramit", sans-serif;
+    font-family: "Ubuntu mono", monospace;
     color: $text;
 }
 .link {
@@ -71,11 +70,48 @@ body {
 .purple {
     color: $purple;
 }
+.ml {
+    margin-left: 1.2rem;
+}
+.ml-1 {
+    margin-left: 1.8rem;
+}
+.ml-2 {
+    margin-left: 2.2rem;
+}
+.ml-3 {
+    margin-left: 3.6rem;
+}
+.small {
+    font-size: 0.9rem;
+}
 @media screen and (min-width: 992px) {
     .section {
-        position: relative;
         &::before {
             transform: translate(-47px, -50%);
+        }
+    }
+    .codeLine {
+        position: relative;
+        &::before {
+            position: absolute;
+            right: calc(80vw - 20px);
+            display: block;
+            content: attr(line);
+            color: $muted;
+            text-align: right;
+        }
+        &:hover {
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                top: 0;
+                right: -18px;
+                width: 100vw;
+                height: 100%;
+                background-color: rgba(107, 107, 107, 0.466);
+            }
         }
     }
 }

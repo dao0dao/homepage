@@ -6,17 +6,27 @@
 }
 .container {
     position: relative;
-    flex-basis: 80%;
+    flex-basis: 98%;
     min-height: 80%;
     padding: 0 1rem;
     border-left: 3px solid $lighted;
     background-color: $background1;
 }
-.section{
+.section {
     margin-bottom: 2rem;
+}
+.small.muted {
+    margin-bottom: 1rem;
+}
+p{
+    min-height: 20px;
 }
 @media screen and (min-width: 992px) {
     .container {
+        flex-basis: 80%;
         padding-left: 3rem;
+    }
+    .small.muted {
+        margin-bottom: 0;
     }
 }

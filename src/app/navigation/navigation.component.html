@@ -39,18 +39,6 @@
             {{'navigation.contact'|translate |tag}}
         </a>
         <div class="lang">
-            <p class="muted">{{'navigation.language'|translate |tag}}</p>
-            <button
-                class="btn lighted"
-                type="button"
-                [ngClass]="{
-                    'lighted': 'en' === lang.getCurrentLang(),
-                    'muted': 'en' !== lang.getCurrentLang()
-                }"
-                (click)="changeLanguage('en')"
-            >
-                {{'en' |tag}}
-            </button>
             <button
                 class="btn lighted"
                 type="button"
@@ -61,6 +49,17 @@
                 (click)="changeLanguage('pl')"
             >
                 {{'pl'| tag}}
+            </button>
+            <button
+                class="btn lighted"
+                type="button"
+                [ngClass]="{
+                    'lighted': 'en' === lang.getCurrentLang(),
+                    'muted': 'en' !== lang.getCurrentLang()
+                }"
+                (click)="changeLanguage('en')"
+            >
+                {{'en' |tag}}
             </button>
         </div>
     </div>

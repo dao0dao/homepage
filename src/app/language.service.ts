@@ -18,7 +18,7 @@ interface LanguageObject {
 export class LanguageService {
   constructor(private http: HttpClient) {}
 
-  private currentLanguage: string = 'en';
+  private currentLanguage: string = 'pl';
   private translations = {} as TranslationObject;
   private isLanguageSet = signal(false);
   public isLanguage$ = this.isLanguageSet.asReadonly();

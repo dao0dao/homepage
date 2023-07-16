@@ -4,7 +4,7 @@
     z-index: 1;
     top: 0;
     opacity: 0.98;
-    width: 100vw;
+    width: 100%;
     display: block;
     background-color: $navBackground;
 }
@@ -87,7 +87,7 @@ nav {
 }
 @media screen and (min-width: 992px) {
     nav {
-        padding: 1rem;
+        padding: 0.5rem;
     }
     .menu {
         display: none;
@@ -98,11 +98,25 @@ nav {
         transform: unset;
         top: unset;
         width: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         background-color: transparent;
         transition: none;
         .link {
             display: inline;
             margin: 0 1rem;
+        }
+        .lang{
+         margin-bottom: 0;
+         display: inline-flex;   
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .btn{
+            margin: 3px 10px;
+            font-size: 12px;
+         }
         }
     }
 }

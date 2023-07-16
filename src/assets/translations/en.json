@@ -4,5 +4,17 @@
         "contact": "Contact",
         "portfolio": "Projects",
         "language": "language"
+    },
+    "home":{
+        "welcome": "Hi, my name's",
+        "name": "Demid Greshnikov",
+        "subtitle":"I'm fronted developer",
+        "introduce": "Let me introduce myself"
+    },
+    "about": {
+        "coding": "//Coding is not just my job, but above all, my passion.",
+        "learning": "//I have the ability to effectively and regularly self-educate.",
+        "inventive": "//I am creative and I enjoy new, unconventional solutions.",
+        "country": "Poland"
     }
 }
