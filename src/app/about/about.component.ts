@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { CodeLineCounterService } from '../code-line-counter.service';
+import { Component } from '@angular/core';
+import { HtmlObjectData } from '../interfaces';
 
 @Component({
   selector: 'app-about',
@@ -7,25 +7,14 @@ import { CodeLineCounterService } from '../code-line-counter.service';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  constructor(private lineCounter: CodeLineCounterService) {}
-
-  @ViewChild('container') containerDOM: ElementRef<HTMLElement> | undefined;
-
-  ngAfterViewInit() {
-    if (!this.containerDOM?.nativeElement) {
-      return;
-    }
-    const htmlElement = this.containerDOM.nativeElement;
-    htmlElement.childNodes.forEach((el, index) => {
-      if (index === 0) {
-        return;
-      }
-      if (!(el instanceof HTMLElement)) {
-        return;
-      }
-      if (el.classList.contains('codeLine')) {
-        el.setAttribute('line', this.lineCounter.line.toString());
-      }
-    });
-  }
+  readonly workExperience: HtmlObjectData[] = [
+    {
+      'Mid Frontend developer': '01.04.2023-',
+      'about.company': 'Westhill Consulting Corp. Sp. z o.o.',
+    },
+    {
+      'Junior Frontend developer': '01.04.2021-31.03.2023',
+      'about.company': 'Westhill Consulting Corp. Sp. z o.o.',
+    },
+  ];
 }

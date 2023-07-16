@@ -8,6 +8,7 @@ import { TagPipe } from './pipes/tag.pipe';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { TranslatePipe } from './pipes/translate.pipe';
+import { HtmlObjectComponent } from './about/html-object/html-object.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TranslatePipe } from './pipes/translate.pipe';
     HomeComponent,
     AboutComponent,
     TranslatePipe,
+    HtmlObjectComponent,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],

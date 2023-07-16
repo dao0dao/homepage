@@ -1,0 +1,19 @@
+<div *ngFor="let el of data;  let i = index">
+    <p class="codeLine ml">
+        <span class="yellowLight">{{'{'}}</span>
+    </p>
+    <div
+        *ngFor="let ob of el |keyvalue"
+        class="ml-1"
+    >
+        <p class="codeLine">
+            <span class="blueLight">{{ob.key|translate}}</span>
+            :
+            <span class="red">{{ob.value| translate}}</span>
+        </p>
+    </div>
+    <p class="codeLine ml">
+        <span class="yellowLight">{{'}'}}</span>
+        <span>,</span>
+    </p>
+</div>

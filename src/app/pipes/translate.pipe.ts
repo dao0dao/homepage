@@ -11,6 +11,9 @@ export class TranslatePipe implements PipeTransform {
     const translations = this.language.getTranslations();
     const lang = this.language.getCurrentLang();
     const keys = value.split('.');
+    if (2 !== keys.length) {
+      return value;
+    }
     if (!Object.keys(translations).length) {
       return value;
     }

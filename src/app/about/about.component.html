@@ -47,13 +47,14 @@
     <p class="codeLine ml">
         <span class="yellowLight">getWorkExperience</span>
         <span class="purple">{{'() {'}}</span>
-        <span class="purple">{{'}'}}</span>
     </p>
     <p class="codeLine ml-2">
         <span class="purple">return</span>
         <span class="blueLight">{{' ['}}</span>
     </p>
-    <div class="ml-3"></div>
+    <div class="ml-3">
+        <app-html-object [data]="workExperience"></app-html-object>
+    </div>
     <p class="codeLine ml-2">
         <span class="blueLight">{{']'}}</span>
     </p>
