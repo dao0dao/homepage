@@ -1,14 +1,14 @@
 {
-    "navigation":{
+    "navigation": {
         "about": "About me",
         "contact": "Contact",
         "portfolio": "Projects",
         "language": "language"
     },
-    "home":{
+    "home": {
         "welcome": "Hi, my name's",
         "name": "Demid Greshnikov",
-        "subtitle":"I'm fronted developer",
+        "subtitle": "I'm fronted developer",
         "introduce": "Let me introduce myself"
     },
     "about": {
@@ -16,6 +16,14 @@
         "learning": "//I have the ability to effectively and regularly self-educate.",
         "inventive": "//I am creative and I enjoy new, unconventional solutions.",
         "country": "Poland",
-        "company": "company"
+        "softPressure": "ability to work under time pressure",
+        "softAnalytic": "analytic skills",
+        "softTeamPlayer": "team player",
+        "softThinking": "critical thinking",
+        "softProblem": "problemSolving",
+        "softWork": "work ethic",
+        "english": "English",
+        "polish": "Polish",
+        "russian": "Russian"
     }
 }

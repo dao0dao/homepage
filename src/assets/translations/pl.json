@@ -1,14 +1,14 @@
 {
-    "navigation":{
+    "navigation": {
         "about": "O mnie",
         "contact": "Kontakt",
         "portfolio": "Portfolio",
         "language": "język"
     },
-    "home":{
+    "home": {
         "welcome": "Cześć, nazywam się",
         "name": "Demid Greshnikov",
-        "subtitle":"Jestem fronted developer",
+        "subtitle": "Jestem fronted developer",
         "introduce": "Pozwólcie, że opowiem o sobie"
     },
     "about": {
@@ -16,6 +16,14 @@
         "learning": "//Cechuje mnie umiejętność skutecznego i regularnego samokształcenia.",
         "inventive": "//Jestem kreatywny i lubię nowe, niestandardowe rozwiązania.",
         "country": "Polska",
-        "company": "firma"
+        "softPressure": "zdolność do pracy pod presją czasu",
+        "softAnalytic": "zdolności analityczne",
+        "softTeamPlayer": "gracz zespołowy",
+        "softThinking": "myślenie krytyczne",
+        "softProblem": "rozwiązywanie problemów",
+        "softWork": "etyka w pracy",
+        "english": "Angielski",
+        "polish": "Polski",
+        "russian": "Rosyjski"
     }
 }

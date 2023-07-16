@@ -44,6 +44,7 @@
     </p>
     <p class="codeLine ml purple">{{'}'}}</p>
     <p class="codeLine"></p>
+    <!-- work experience -->
     <p class="codeLine ml">
         <span class="yellowLight">getWorkExperience</span>
         <span class="purple">{{'() {'}}</span>
@@ -61,4 +62,62 @@
     <p class="codeLine ml">
         <span class="purple">{{'}'}}</span>
     </p>
+    <p class="codeLine"></p>
+    <!-- tech stack -->
+    <p class="codeLine ml">
+        <span class="yellowLight">getTechStack</span>
+        <span class="purple">{{'() {'}}</span>
+    </p>
+    <p class="codeLine ml-2">
+        <span class="purple">return</span>
+        <span class="blueLight">{{' ['}}</span>
+    </p>
+    <div class="ml-3">
+        <app-html-array [data]="techStack"></app-html-array>
+    </div>
+    <p class="codeLine ml-2">
+        <span class="blueLight">{{']'}}</span>
+    </p>
+    <p class="codeLine ml">
+        <span class="purple">{{'}'}}</span>
+    </p>
+    <p class="codeLine"></p>
+    <!-- softSkills -->
+    <p class="codeLine ml">
+        <span class="yellowLight">getSoftSkills</span>
+        <span class="purple">{{'() {'}}</span>
+    </p>
+    <p class="codeLine ml-2">
+        <span class="purple">return</span>
+        <span class="blueLight">{{' ['}}</span>
+    </p>
+    <div class="ml-3">
+        <app-html-array [data]="softSkills"></app-html-array>
+    </div>
+    <p class="codeLine ml-2">
+        <span class="blueLight">{{']'}}</span>
+    </p>
+    <p class="codeLine ml">
+        <span class="purple">{{'}'}}</span>
+    </p>
+    <p class="codeLine"></p>
+    <!-- languages -->
+    <p class="codeLine ml">
+        <span class="yellowLight">getLanguages</span>
+        <span class="purple">{{'() {'}}</span>
+    </p>
+    <p class="codeLine ml-2">
+        <span class="purple">return</span>
+        <span class="blueLight">{{' ['}}</span>
+    </p>
+    <div class="ml-3">
+        <app-html-object [data]="languages"></app-html-object>
+    </div>
+    <p class="codeLine ml-2">
+        <span class="blueLight">{{']'}}</span>
+    </p>
+    <p class="codeLine ml">
+        <span class="purple">{{'}'}}</span>
+    </p>
+    <p class="codeLine"></p>
 </div>

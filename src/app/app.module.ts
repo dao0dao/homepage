@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { HtmlObjectComponent } from './about/html-object/html-object.component';
+import { HtmlArrayComponent } from './about/html-array/html-array.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HtmlObjectComponent } from './about/html-object/html-object.component';
     AboutComponent,
     TranslatePipe,
     HtmlObjectComponent,
+    HtmlArrayComponent,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
