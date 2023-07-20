@@ -9,11 +9,11 @@ import { HtmlObjectData } from '../interfaces';
 export class AboutComponent {
   readonly workExperience: HtmlObjectData[] = [
     {
-      'Mid Frontend developer': '01.04.2023-',
+      'Mid frontend developer': '01.04.2023-',
       company: 'Westhill Consulting Corp. Sp. z o.o.',
     },
     {
-      'Junior Frontend developer': '01.04.2021-31.03.2023',
+      'Junior frontend developer': '01.04.2021-31.03.2023',
       company: 'Westhill Consulting Corp. Sp. z o.o.',
     },
   ];
@@ -38,16 +38,15 @@ export class AboutComponent {
 
   readonly softSkills = [
     'about.softPressure',
-    'about.softAnalytic',
     'about.softTeamPlayer',
+    'about.softAnalytic',
     'about.softThinking',
     'about.softProblem',
-    'about.softWork',
   ];
 
   readonly languages: HtmlObjectData[] = [
-    { 'about.english': 'B1/B2' },
-    { 'about.polish': 'C2' },
-    { 'about.russian': 'C2' },
+    { language: 'about.english', level: 'B1/B2' },
+    { language: 'about.polish', level: 'C2' },
+    { language: 'about.russian', level: 'C2' },
   ];
 }

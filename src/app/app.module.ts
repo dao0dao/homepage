@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { HtmlObjectComponent } from './about/html-object/html-object.component';
 import { HtmlArrayComponent } from './about/html-array/html-array.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TranslateDirective } from './directives/translate.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { HtmlArrayComponent } from './about/html-array/html-array.component';
     TranslatePipe,
     HtmlObjectComponent,
     HtmlArrayComponent,
+    PortfolioComponent,
+    TranslateDirective,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
