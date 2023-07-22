@@ -11,8 +11,7 @@ export class TranslateDirective {
   ) {
     effect(() => {
       const data = this.language.computedSignal();
-      const innerText = this.el.nativeElement.innerText;
-      this.setInitialAttribute(innerText);
+      this.setKeys(this.el.nativeElement.innerText);
       const translation = this.translate(
         this.keys,
         data.lang,
@@ -22,28 +21,23 @@ export class TranslateDirective {
     });
   }
 
-  private readonly attributeName = 'keys';
+  private keys: string = '';
+  ngOnInit() {
+    this.keys = this.el.nativeElement.innerText;
+  }
 
-  private setInitialAttribute(value: string) {
-    const el = this.el.nativeElement;
-    if (!el.getAttribute(this.attributeName)) {
-      el.setAttribute(this.attributeName, value);
+  private setKeys(keys: string) {
+    if (!this.keys) {
+      this.keys = keys;
     }
   }
 
-  private get keys() {
-    return (
-      this.el.nativeElement.getAttribute(this.attributeName) ??
-      this.el.nativeElement.innerText
-    );
-  }
-
   private translate(
-    input: string,
+    inputKeys: string,
     lang: string,
     translations: TranslationObject
   ) {
-    const value = input.trim();
+    const value = inputKeys.trim();
     const keys = value.split('.');
     if (2 !== keys.length) {
       return value;
