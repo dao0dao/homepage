@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 @import "src/assets/colors.scss";
 :root {
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     font-size: 18px;
     font-weight: 400;
-    scrollbar-width: thin;
-    scrollbar-color: $background1 $background2;
+    // scrollbar-width: thin;
+    // scrollbar-color: $background1 $background2;
 }
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: $background2 $background1;
     &::before,
     &::after {
         box-sizing: border-box;

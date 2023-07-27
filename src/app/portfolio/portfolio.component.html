@@ -5,4 +5,15 @@
     >
         {{'Projects' | tag}}
     </h4>
+    <div class="cardsContainer">
+        <div
+            *ngFor="let p of projects"
+            class="card"
+        >
+            <img
+                [src]="p.thumbnailUrl"
+                alt
+            >
+        </div>
+    </div>
 </div>

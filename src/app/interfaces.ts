@@ -4,8 +4,9 @@ export interface HtmlObjectData {
 
 export interface Project {
   name: string;
-  description: string,
-  techStach: string,
-  link: string
-  isActive: boolean
+  description: string;
+  techStach: string;
+  thumbnailUrl: string;
+  liveLink: string;
+  isActive: boolean;
 }
