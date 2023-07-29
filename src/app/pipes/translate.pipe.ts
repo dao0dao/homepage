@@ -7,7 +7,10 @@ import { LanguageService } from '../language.service';
 })
 export class TranslatePipe implements PipeTransform {
   constructor(private language: LanguageService) {}
-  transform(value: string): string {
+  transform(value: any): string {
+    if ('string' !== typeof value) {
+      return value;
+    }
     const translations = this.language.getTranslations();
     const lang = this.language.getCurrentLang();
     const keys = value.split('.');

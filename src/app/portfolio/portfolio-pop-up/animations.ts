@@ -34,10 +34,18 @@ export const animations = [
       style({ transform: 'translateY(100%)' }),
       animate('0.25s ease-in-out', style({ transform: 'translateY(0%)' })),
     ]),
+    transition('true <=> false', [
+      animate('0.25s ease-in-out', style({ transform: 'translateY(100%)' })),
+      animate('0.25s ease-in-out', style({ transform: 'translateY(0%)' })),
+    ]),
   ]),
   trigger('left', [
     transition(':enter', [
       style({ transform: 'translateX(-100%)' }),
+      animate('0.25s ease-in-out', style({ transform: 'translateX(0%)' })),
+    ]),
+    transition('true <=> false', [
+      animate('0.25s ease-in-out', style({ transform: 'translateX(-100%)' })),
       animate('0.25s ease-in-out', style({ transform: 'translateX(0%)' })),
     ]),
   ]),
@@ -48,6 +56,10 @@ export const animations = [
         animate('0.25s ease-in-out', style({ opacity: 1 })),
       ]),
     ]),
+    transition('true <=> false', [
+      animate('0.25s ease-in-out', style({ opacity: 0 })),
+      animate('0.25s ease-in-out', style({ opacity: 1 })),
+    ]),
   ]),
   trigger('about', [
     transition(':enter', [
@@ -55,6 +67,10 @@ export const animations = [
         style({ opacity: 0 }),
         animate('0.25s ease-in-out', style({ opacity: 1 })),
       ]),
+    ]),
+    transition('true <=> false', [
+      animate('0.25s ease-in-out', style({ opacity: 0 })),
+      animate('0.25s ease-in-out', style({ opacity: 1 })),
     ]),
   ]),
 ];

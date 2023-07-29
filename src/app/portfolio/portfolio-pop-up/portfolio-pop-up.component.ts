@@ -19,9 +19,10 @@ export class PortfolioPopUpComponent implements OnChanges {
   @Input() project!: Project;
   @Output() Close = new EventEmitter<unknown>();
   @Output() Scroll = new EventEmitter<'left' | 'right'>();
+  currentProject: Project | undefined;
   isClosing: boolean = false;
   cardState: boolean = false;
-  private readonly animationTime = 300;
+  private readonly animationTime = 250;
 
   ngOnChanges(changes: SimpleChanges) {
     if (
@@ -30,6 +31,11 @@ export class PortfolioPopUpComponent implements OnChanges {
         changes['project'].currentValue?.name
     ) {
       this.cardState = !this.cardState;
+      setTimeout(() => {
+        this.currentProject = this.project;
+      }, this.animationTime);
+    } else {
+      this.currentProject = this.project;
     }
   }
 

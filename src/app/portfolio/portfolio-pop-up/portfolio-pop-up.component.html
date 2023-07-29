@@ -27,28 +27,30 @@
         </svg>
     </button>
     <div
-        @top
+        [@top]="cardState"
         class="background background--top"
     ></div>
     <div
-        @left
+        [@left]="cardState"
         class="background background--left"
     ></div>
     <img
-        @image
-        [src]="project.thumbnailUrl"
+        [@image]="cardState"
+        [src]="currentProject?.thumbnailUrl"
         alt="Project thumbnail"
     >
     <div
-        @about
+        [@about]="cardState"
         class="about"
     >
-        <p class="name">{{project.name |translate}}</p>
+        <p class="name">{{currentProject?.name |translate}}</p>
         <div class="line"></div>
-        <p class="techStack">{{project.techStach|translate}}</p>
-        <p class="description">{{project.description|translate}}</p>
+        <p class="techStack">{{currentProject?.techStach|translate}}</p>
+        <p class="description">
+            {{currentProject?.description|translate}}
+        </p>
         <a
-            [href]="project.liveLink"
+            [href]="currentProject?.liveLink"
             class="link"
             target="_blank"
         >
