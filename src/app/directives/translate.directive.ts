@@ -11,7 +11,7 @@ export class TranslateDirective {
   ) {
     effect(() => {
       const data = this.language.computedSignal();
-      this.setKeys(this.el.nativeElement.innerText);
+      this.setKeys(this.el.nativeElement.innerHTML);
       const translation = this.translate(
         this.keys,
         data.lang,
@@ -23,7 +23,7 @@ export class TranslateDirective {
 
   private keys: string = '';
   ngOnInit() {
-    this.keys = this.el.nativeElement.innerText;
+    this.keys = this.el.nativeElement.innerHTML;
   }
 
   private setKeys(keys: string) {

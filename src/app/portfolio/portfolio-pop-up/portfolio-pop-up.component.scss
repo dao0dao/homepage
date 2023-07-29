@@ -1,0 +1,116 @@
+@import "src/assets/colors.scss";
+:host {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background1;
+}
+.container {
+    position: relative;
+    z-index: 2;
+    width: 95%;
+    max-width: 500px;
+    max-height: 700px;
+    height: 95%;
+    .btn {
+        position: absolute;
+        z-index: 3;
+        &--close {
+            top: -10px;
+            right: -10px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: $lighted;
+            }
+        }
+    }
+    .background {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &--top {
+            // transform: translateY(100%);
+            background: linear-gradient(
+                180deg,
+                hsla(210, 38%, 8%, 0) 0%,
+                hsla(210, 38%, 8%, 0.1) 10%,
+                hsla(210, 38%, 8%, 0.2) 20%,
+                hsla(210, 38%, 8%, 0.3) 30%,
+                hsla(210, 38%, 8%, 0.4) 40%,
+                hsla(210, 38%, 8%, 0.5) 50%,
+                hsla(210, 38%, 8%, 0.6) 60%,
+                hsla(210, 38%, 8%, 0.7) 70%
+            );
+        }
+        &--left {
+            // transform: translateX(-100%);
+            background: linear-gradient(
+                270deg,
+                hsla(210, 38%, 8%, 0) 0%,
+                hsla(210, 38%, 8%, 0.1) 10%,
+                hsla(210, 38%, 8%, 0.2) 20%,
+                hsla(210, 38%, 8%, 0.3) 30%,
+                hsla(210, 38%, 8%, 0.4) 40%,
+                hsla(210, 38%, 8%, 0.5) 50%,
+                hsla(210, 38%, 8%, 0.6) 60%,
+                hsla(210, 38%, 8%, 0.7) 70%
+            );
+        }
+    }
+    img {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 95%;
+        max-height: 95%;
+    }
+    .about {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        // background-color: hsla(0, 0%, 27%, 0.8);
+    }
+    .name {
+        padding-left: 10px;
+        font-size: 1.2rem;
+        color: #ddd;
+    }
+    .line {
+        height: 2px;
+        margin: 0.5rem 0 0.2rem;
+        padding-left: 10px;
+        background-color: $lighted;
+    }
+    .techStack {
+        padding-left: 10px;
+        color: #93c0df;
+    }
+    .description {
+        margin-top: 1rem;
+        padding-left: 10px;
+    }
+    .link {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

@@ -9,11 +9,24 @@
         <div
             *ngFor="let p of projects"
             class="card"
+            (click)="showPopUp(p)"
         >
             <img
                 [src]="p.thumbnailUrl"
                 alt
             >
+            <div class="card_shadow">
+                <div class="description">
+                    <p class="name">{{p.name |translate}}</p>
+                    <div class="line"></div>
+                    <p class="techStack">{{p.techStach|translate}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<app-portfolio-pop-up
+    *ngIf="isPopUp"
+    [project]="showedProject!"
+    (Close)="closePopUp()"
+></app-portfolio-pop-up>

@@ -1,0 +1,42 @@
+<div
+    [@container]="isClosing"
+    class="container"
+>
+    <button
+        class="btn btn--close"
+        (click)="close()"
+    >
+        <svg>
+            <use [attr.xlink:href]="'assets/icons.svg#icon-x'"></use>
+        </svg>
+    </button>
+    <div
+        @top
+        class="background background--top"
+    ></div>
+    <div
+        @left
+        class="background background--left"
+    ></div>
+    <img
+        @image
+        [src]="project.thumbnailUrl"
+        alt="Project thumbnail"
+    >
+    <div
+        @about
+        class="about"
+    >
+        <p class="name">{{project.name |translate}}</p>
+        <div class="line"></div>
+        <p class="techStack">{{project.techStach|translate}}</p>
+        <p class="description">{{project.description|translate}}</p>
+        <a
+            [href]="project.liveLink"
+            class="link"
+            target="_blank"
+        >
+            live
+        </a>
+    </div>
+</div>

@@ -9,4 +9,16 @@ import { myProjects } from './projects';
 })
 export class PortfolioComponent {
   projects: Project[] = myProjects;
+  isPopUp: boolean = false;
+  showedProject: Project | undefined = undefined;
+
+  showPopUp(project: Project) {
+    this.showedProject = project;
+    this.isPopUp = true;
+  }
+
+  closePopUp() {
+    this.isPopUp = false;
+    this.showedProject = undefined;
+  }
 }
