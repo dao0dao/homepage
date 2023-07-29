@@ -14,24 +14,34 @@
 .container {
     position: relative;
     z-index: 2;
-    width: 95%;
+    width: 85%;
     max-width: 500px;
     max-height: 700px;
     height: 95%;
     .btn {
         position: absolute;
         z-index: 3;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $lighted;
+        }
         &--close {
             top: -10px;
             right: -10px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            svg {
-                width: 30px;
-                height: 30px;
-                fill: $lighted;
-            }
+        }
+        &--left {
+            top: 50%;
+            left: 0%;
+            transform: translate(-100%, -50%);
+        }
+        &--right {
+            top: 50%;
+            right: 0%;
+            transform: translate(100%, -50%);
         }
     }
     .background {
@@ -88,7 +98,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
-        // background-color: hsla(0, 0%, 27%, 0.8);
     }
     .name {
         padding-left: 10px;
@@ -112,5 +121,16 @@
     .link {
         margin-top: 2rem;
         text-align: center;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 95%;
+        .btn {
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
 }

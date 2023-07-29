@@ -7,9 +7,9 @@
     </h4>
     <div class="cardsContainer">
         <div
-            *ngFor="let p of projects"
+            *ngFor="let p of projects; let i = index"
             class="card"
-            (click)="showPopUp(p)"
+            (click)="showPopUp(p, i)"
         >
             <img
                 [src]="p.thumbnailUrl"
@@ -28,5 +28,6 @@
 <app-portfolio-pop-up
     *ngIf="isPopUp"
     [project]="showedProject!"
+    (Scroll)="scrollPopUp($event)"
     (Close)="closePopUp()"
 ></app-portfolio-pop-up>

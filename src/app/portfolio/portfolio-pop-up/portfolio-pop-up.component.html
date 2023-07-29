@@ -10,6 +10,22 @@
             <use [attr.xlink:href]="'assets/icons.svg#icon-x'"></use>
         </svg>
     </button>
+    <button
+        class="btn btn--left"
+        (click)="previous()"
+    >
+        <svg>
+            <use [attr.xlink:href]="'assets/icons.svg#icon-arrow-left'"></use>
+        </svg>
+    </button>
+    <button
+        class="btn btn--right"
+        (click)="next()"
+    >
+        <svg>
+            <use [attr.xlink:href]="'assets/icons.svg#icon-arrow-right'"></use>
+        </svg>
+    </button>
     <div
         @top
         class="background background--top"
