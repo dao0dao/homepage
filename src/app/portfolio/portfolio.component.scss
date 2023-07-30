@@ -15,19 +15,64 @@
 .section {
     margin-bottom: 2rem;
 }
+.cardBlock {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+    user-select: none;
+
+}
 .cardsContainer {
     overflow: auto;
-    margin: 0 15px;
-    padding: 15px 0;
+    scrollbar-width: none;
+    margin: 15px 20px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
+}
+.btn {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+    &--left {
+        left: 0%;
+        transform: translate(-5px, -50%);
+    }
+    &--right {
+        right: 0%;
+        transform: translate(5px, -50%);
+    }
+    &--hidden {
+        opacity: 0;
+        pointer-events: none;
+        cursor: auto;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $lighted;
+    }
+}
+.icon {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg);
+    transform-origin: bottom center;
+    width: 20px;
+    height: 20px;
+    fill: $lighted;
+    animation: Rolling 0.8s ease-in-out alternate infinite;
 }
 .card {
     position: relative;
     flex-shrink: 0;
     margin: 0 3rem;
-    cursor: pointer;
     img {
         max-width: 400px;
         max-height: 400px;
@@ -43,7 +88,7 @@
         justify-content: center;
         align-items: stretch;
         background-image: linear-gradient(40deg, hsla(210, 38%, 8%, 0.9) 30%, hsla(0, 0%, 100%, 0.8) 100%);
-        .description{
+        .description {
             position: relative;
             transform: translateX(-55px);
             width: 240px;
@@ -71,6 +116,15 @@
         padding-left: 3rem;
     }
     .cardsContainer {
-        margin: 0 30px;
+        margin: 15px 30px;
+    }
+}
+
+@keyframes Rolling {
+    0% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
     }
 }

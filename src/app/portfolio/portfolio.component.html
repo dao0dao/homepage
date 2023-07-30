@@ -5,21 +5,52 @@
     >
         {{'Projects' | tag}}
     </h4>
-    <div class="cardsContainer">
-        <div
-            *ngFor="let p of projects; let i = index"
-            class="card"
-            (click)="showPopUp(p, i)"
+    <div class="cardBlock">
+        <button
+            class="btn btn--left"
+            [ngClass]="{'btn--hidden': !isLeftBtn}"
+            (click)="scroll('left')"
         >
-            <img
-                [src]="p.thumbnailUrl"
-                alt
+            <svg>
+                <use [attr.xlink:href]="'assets/icons.svg#icon-arrow-left'"></use>
+            </svg>
+        </button>
+        <button
+            class="btn btn--right"
+            [ngClass]="{'btn--hidden': !isRightBtn}"
+            (click)="scroll('right')"
+        >
+            <svg>
+                <use [attr.xlink:href]="'assets/icons.svg#icon-arrow-right'"></use>
+            </svg>
+        </button>
+        <svg class="icon">
+            <use [attr.xlink:href]="'assets/icons.svg#icon-pointer'"></use>
+        </svg>
+        <div
+            #carContainer
+            class="cardsContainer"
+            (mousemove)="moveGallery($event)"
+            (pointerdown)="startScroll($event)"
+            (pointerup)="stopScroll($event)"
+            (pointerleave)="stopScroll($event)"
+            (scroll)="isBtnHidden()"
+        >
+            <div
+                *ngFor="let p of projects; let i = index"
+                class="card"
+                (click)="showPopUp(p, i)"
             >
-            <div class="card_shadow">
-                <div class="description">
-                    <p class="name">{{p.name |translate}}</p>
-                    <div class="line"></div>
-                    <p class="techStack">{{p.techStach|translate}}</p>
+                <img
+                    [src]="p.thumbnailUrl"
+                    alt
+                >
+                <div class="card_shadow">
+                    <div class="description">
+                        <p class="name">{{p.name |translate}}</p>
+                        <div class="line"></div>
+                        <p class="techStack">{{p.techStach|translate}}</p>
+                    </div>
                 </div>
             </div>
         </div>

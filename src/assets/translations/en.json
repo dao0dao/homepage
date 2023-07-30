@@ -32,7 +32,7 @@
     },
     "projectTournament": {
         "name": "Simple tournament",
-        "techStack": "Angular, Firebase",
+        "techStack": "Angular, Angular Material, Firebase",
         "description": "On this page, you can add users who have previously registered to the tournament. The tournament is played in a single-elimination format."
     },
     "projectReservationSystem": {

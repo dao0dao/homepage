@@ -32,7 +32,7 @@
     },
     "projectTournament": {
         "name": "Drabinka turniejowa",
-        "techStack": "Angular, Firebase",
+        "techStack": "Angular, Angular Material, Firebase",
         "description": "Na tej stronie możesz dodać użytkowników, którzy wcześniej zarejestrowali się do turnieju. Turniej rozgrywany jest w systemie pucharowym."
     },
     "projectReservationSystem": {
