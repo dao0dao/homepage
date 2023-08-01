@@ -25,6 +25,7 @@ export class PortfolioComponent {
   isRightBtn: boolean = false;
   private showedProjectIndex: number = 0;
   private isScrolling: boolean = false;
+  private isMovingGallery: boolean = false;
 
   constructor(private cd: ChangeDetectorRef) {}
 
@@ -34,7 +35,7 @@ export class PortfolioComponent {
   }
 
   showPopUp(project: Project, index: number) {
-    if (this.isScrolling) {
+    if (this.isScrolling || this.isMovingGallery) {
       return;
     }
     this.showedProject = project;
@@ -78,13 +79,14 @@ export class PortfolioComponent {
   }
 
   startScroll(e: PointerEvent) {
-    e.stopPropagation();
     this.isScrolling = true;
   }
 
   stopScroll(e: PointerEvent) {
-    e.stopPropagation();
     this.isScrolling = false;
+    setTimeout(() => {
+      this.isMovingGallery = false;
+    }, 0);
   }
 
   moveGallery(event: MouseEvent) {
@@ -95,6 +97,7 @@ export class PortfolioComponent {
     if (!container) {
       return;
     }
+    this.isMovingGallery = true;
     container.scrollLeft = container.scrollLeft - event.movementX * 10;
   }
 

@@ -14,6 +14,7 @@ import { HtmlArrayComponent } from './about/html-array/html-array.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TranslateDirective } from './directives/translate.directive';
 import { PortfolioPopUpComponent } from './portfolio/portfolio-pop-up/portfolio-pop-up.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PortfolioPopUpComponent } from './portfolio/portfolio-pop-up/portfolio-
     PortfolioComponent,
     TranslateDirective,
     PortfolioPopUpComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

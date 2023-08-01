@@ -5,6 +5,12 @@
         "portfolio": "Projects",
         "language": "language"
     },
+    "headers": {
+        "home": "Home",
+        "about": "About me",
+        "project": "Projects",
+        "contact": "Contact"
+    },
     "home": {
         "welcome": "Hi, my name's",
         "name": "Demid Greshnikov",
@@ -74,5 +80,8 @@
         "name": "Website of fake company",
         "techStack": "Bootstrap, Animate.css, JS, RWD",
         "description": "My first steps in IT like frontend developer"
+    },
+    "contact": {
+        "find": "Find me online:"
     }
 }

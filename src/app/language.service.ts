@@ -18,7 +18,7 @@ interface LanguageObject {
 export class LanguageService {
   constructor(private http: HttpClient) {}
 
-  private currentLanguage: string = 'pl';
+  private currentLanguage: string = 'en';
   private currentLanguageSignal = signal(this.currentLanguage);
 
   private translations = {} as TranslationObject;

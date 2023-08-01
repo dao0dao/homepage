@@ -20,7 +20,6 @@
     margin-bottom: 1rem;
     padding-bottom: 20px;
     user-select: none;
-
 }
 .cardsContainer {
     overflow: auto;
@@ -66,7 +65,7 @@
     transform-origin: bottom center;
     width: 20px;
     height: 20px;
-    fill: $lighted;
+    fill: $muted;
     animation: Rolling 0.8s ease-in-out alternate infinite;
 }
 .card {

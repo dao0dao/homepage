@@ -23,6 +23,6 @@ export class TranslatePipe implements PipeTransform {
     if (!translations[lang]) {
       return value;
     }
-    return translations[lang]?.[keys[0]]?.[keys[1]];
+    return (translations[lang]?.[keys[0]]?.[keys[1]]);
   }
 }
