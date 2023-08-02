@@ -29,9 +29,8 @@ export class PortfolioComponent {
 
   constructor(private cd: ChangeDetectorRef) {}
 
-  ngAfterViewInit() {
-    this.isBtnHidden();
-    this.cd.detectChanges();
+  ngOnInit() {
+    this.setBtnInitialView();
   }
 
   showPopUp(project: Project, index: number) {
@@ -101,7 +100,7 @@ export class PortfolioComponent {
     container.scrollLeft = container.scrollLeft - event.movementX * 10;
   }
 
-  isBtnHidden(): boolean | void {
+  setBtnVisibility() {
     const container = this.cardsContainerDOM?.nativeElement;
     if (container) {
       if (container.scrollLeft === 0) {
@@ -118,5 +117,20 @@ export class PortfolioComponent {
         this.isRightBtn = true;
       }
     }
+  }
+
+  private setBtnInitialView() {
+    let i = 20;
+    const interval = setInterval(() => {
+      const container = this.cardsContainerDOM?.nativeElement;
+      i++;
+      if (!container) {
+        return;
+      }
+      if (container.scrollWidth > container.clientWidth || 20 === i) {
+        this.setBtnVisibility();
+        clearInterval(interval);
+      }
+    }, 500);
   }
 }

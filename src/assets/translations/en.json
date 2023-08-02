@@ -45,6 +45,11 @@
         "techStack": "Angular, Angular Material, Firebase",
         "description": "On this page, you can add users who have previously registered to the tournament. The tournament is played in a single-elimination format."
     },
+    "projectHomePageV1":{
+        "name": "Homepage v1",
+        "techStack": "HTML, JS, SCSS, RWD",
+        "description": "First version of my homepage"
+    },
     "projectReservationSystem": {
         "name": "Court reservation",
         "techStack": "Angular, Firebase",

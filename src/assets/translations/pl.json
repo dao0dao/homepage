@@ -45,6 +45,11 @@
         "techStack": "Angular, Angular Material, Firebase",
         "description": "Na tej stronie możesz dodać użytkowników, którzy wcześniej zarejestrowali się do turnieju. Turniej rozgrywany jest w systemie pucharowym."
     },
+    "projectHomePageV1":{
+        "name": "Strona domowa, v1.",
+        "techStack": "HTML, JS, SCSS, RWD",
+        "description": "Pierwsza wersja mojej strony domowej"
+    },
     "projectReservationSystem": {
         "name": "Rezerwacja kortów",
         "techStack": "Angular, Firebase",

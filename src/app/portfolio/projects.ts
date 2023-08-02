@@ -20,6 +20,15 @@ export const myProjects: Project[] = [
     codeLink: 'https://github.com/dao0dao/tournamentRegistration',
   },
   {
+    name: 'projectHomePageV1.name',
+    techStach: 'projectHomePageV1.techStack',
+    description: 'projectHomePageV1.description',
+    thumbnailUrl: '/assets/images/projects/HomepageV1.png',
+    liveLink: 'https://dao0dao.github.io/dao/',
+    isActive: true,
+    codeLink: 'https://github.com/dao0dao/dao',
+  },
+  {
     name: 'projectReservationSystem.name',
     techStach: 'projectReservationSystem.techStack',
     description: 'projectReservationSystem.description',

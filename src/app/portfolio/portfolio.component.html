@@ -32,7 +32,7 @@
             (pointerdown)="startScroll($event)"
             (pointerup)="stopScroll($event)"
             (pointerleave)="stopScroll($event)"
-            (scroll)="isBtnHidden()"
+            (scroll)="setBtnVisibility()"
         >
             <div
                 *ngFor="let p of projects; let i = index"
