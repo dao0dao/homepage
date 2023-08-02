@@ -31,6 +31,10 @@
         "polish": "Polish",
         "russian": "Russian"
     },
+    "project":{
+        "code": "Code",
+        "live": "Website"
+    },
     "projectNestCourtReservation": {
         "name": "Court reservation",
         "techStack": "NestJS, MySQL, Angular15",

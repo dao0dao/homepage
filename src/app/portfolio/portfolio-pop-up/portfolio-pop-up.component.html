@@ -50,11 +50,25 @@
             {{currentProject?.description|translate}}
         </p>
         <a
+            *ngIf="currentProject?.isActive"
             [href]="currentProject?.liveLink"
             class="link"
             target="_blank"
         >
-            live
+            <svg>
+                <use [attr.xlink:href]="'assets/icons.svg#icon-globe'"></use>
+            </svg>
+            <span>{{'project.live'| translate}}</span>
+        </a>
+        <a
+            [href]="currentProject?.codeLink"
+            class="link"
+            target="_blank"
+        >
+            <svg>
+                <use [attr.xlink:href]="'assets/icons.svg#icon-github'"></use>
+            </svg>
+            <span>{{'project.code'| translate}}</span>
         </a>
     </div>
 </div>

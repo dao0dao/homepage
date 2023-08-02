@@ -8,6 +8,7 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/FirstNestJS.png',
     liveLink: 'https://kortymm.onrender.com/',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/firstNestJs',
   },
   {
     name: 'projectTournament.name',
@@ -16,6 +17,7 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/tournamentRegistration.png',
     liveLink: 'https://dao0dao.github.io/tournamentRegistration/',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/tournamentRegistration',
   },
   {
     name: 'projectReservationSystem.name',
@@ -24,6 +26,7 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/dailyShceduleAngular.png',
     liveLink: 'https://dao0dao.github.io/DaylyTimeline/',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/DaylyTimeline',
   },
   {
     name: 'projectClubGo.name',
@@ -32,6 +35,7 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/GoAkaiRYuu.png',
     liveLink: 'http://torun.go.art.pl/index.html',
     isActive: true,
+    codeLink: '',
   },
   {
     name: 'projectShop.name',
@@ -39,7 +43,8 @@ export const myProjects: Project[] = [
     description: 'projectShop.description',
     thumbnailUrl: '/assets/images/projects/myFirstNodeJs.png',
     liveLink: 'https://my-first-node-js-shop.herokuapp.com/',
-    isActive: true,
+    isActive: false,
+    codeLink: 'https://github.com/dao0dao/nodeJsShop',
   },
   {
     name: 'projectAngularBlog.name',
@@ -48,22 +53,25 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/BlogAnguralApiFirebase.png',
     liveLink: 'https://angular-forum-4489d.web.app/',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/Blog-Angular',
   },
   {
     name: 'projectAngularRouting.name',
     techStach: 'projectAngularRouting.techStack',
     description: 'projectAngularRouting.description',
     thumbnailUrl: '/assets/images/projects/ForumAngularSpa.png',
-    liveLink: 'https://dao0dao.github.io/AngularRoutingWithSPA/about',
+    liveLink: 'https://dao0dao.github.io/AngularRoutingWithSPA',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/AngularRoutingWithSPA',
   },
   {
     name: 'projectToDO.name',
     techStach: 'projectToDO.techStack',
     description: 'projectToDO.description',
     thumbnailUrl: '/assets/images/projects/ToDoAngularMaterialSpa.png',
-    liveLink: 'https://github.com/dao0dao/AngularToDo',
+    codeLink: 'https://github.com/dao0dao/AngularToDo',
     isActive: true,
+    liveLink: 'https://dao0dao.github.io/AngularToDo/',
   },
   {
     name: 'projectWeatherApp.name',
@@ -72,6 +80,7 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/WeatherApp.png',
     liveLink: 'https://dao0dao.github.io/WeatherApp/',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/WeatherApp',
   },
   {
     name: 'projectWebsite.name',
@@ -80,5 +89,6 @@ export const myProjects: Project[] = [
     thumbnailUrl: '/assets/images/projects/WebpageFake.png',
     liveLink: 'https://dao0dao.github.io/Onepage/',
     isActive: true,
+    codeLink: 'https://github.com/dao0dao/Onepage',
   },
 ];

@@ -8,5 +8,6 @@ export interface Project {
   techStach: string;
   thumbnailUrl: string;
   liveLink: string;
+  codeLink: string;
   isActive: boolean;
 }
