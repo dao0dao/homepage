@@ -31,22 +31,22 @@ export const animations = [
   ]),
   trigger('top', [
     transition(':enter', [
-      style({ transform: 'translateY(100%)' }),
-      animate('0.25s ease-in-out', style({ transform: 'translateY(0%)' })),
+      style({ transform: 'translateY(0%)' }),
+      animate('0.25s ease-in-out', style({ transform: 'translateY(100%)' })),
     ]),
     transition('true <=> false', [
-      animate('0.25s ease-in-out', style({ transform: 'translateY(100%)' })),
       animate('0.25s ease-in-out', style({ transform: 'translateY(0%)' })),
+      animate('0.25s ease-in-out', style({ transform: 'translateY(100%)' })),
     ]),
   ]),
   trigger('left', [
     transition(':enter', [
-      style({ transform: 'translateX(-100%)' }),
-      animate('0.25s ease-in-out', style({ transform: 'translateX(0%)' })),
+      style({ transform: 'translateX(0%)' }),
+      animate('0.25s ease-in-out', style({ transform: 'translateX(-100%)' })),
     ]),
     transition('true <=> false', [
-      animate('0.25s ease-in-out', style({ transform: 'translateX(-100%)' })),
       animate('0.25s ease-in-out', style({ transform: 'translateX(0%)' })),
+      animate('0.25s ease-in-out', style({ transform: 'translateX(-100%)' })),
     ]),
   ]),
   trigger('image', [

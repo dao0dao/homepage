@@ -26,19 +26,21 @@
             <use [attr.xlink:href]="'assets/icons.svg#icon-arrow-right'"></use>
         </svg>
     </button>
-    <div
-        [@top]="cardState"
-        class="background background--top"
-    ></div>
-    <div
-        [@left]="cardState"
-        class="background background--left"
-    ></div>
-    <img
-        [@image]="cardState"
-        [src]="currentProject?.thumbnailUrl"
-        alt="Project thumbnail"
-    >
+    <div class="img">
+        <div
+            [@top]="cardState"
+            class="background background--top"
+        ></div>
+        <div
+            [@left]="cardState"
+            class="background background--left"
+        ></div>
+        <img
+            [@image]="cardState"
+            [src]="currentProject?.thumbnailUrl"
+            alt="Project thumbnail"
+        >
+    </div>
     <div
         [@about]="cardState"
         class="about"

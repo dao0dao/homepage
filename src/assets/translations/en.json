@@ -38,7 +38,7 @@
     "projectNestCourtReservation": {
         "name": "Court reservation",
         "techStack": "NestJS, MySQL, Angular15",
-        "description": "In this project you can add and edit players in the database, including creating virtual accounts for them services. Also you can create various services, adding, editing, and deleting entries in the schedule."
+        "description": "In this project you can add and edit players in the database, including creating virtual accounts for them services. Also you can create various services, adding, editing, and deleting entries in the schedule. If you want to get access to this project - please contact me"
     },
     "projectTournament": {
         "name": "Simple tournament",

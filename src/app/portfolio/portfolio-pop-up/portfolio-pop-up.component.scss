@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $background1;
+    background-color: $background3;
 }
 .container {
     position: relative;
@@ -30,8 +30,8 @@
             fill: $lighted;
         }
         &--close {
-            top: -10px;
-            right: -10px;
+            top: -30px;
+            right: -15px;
         }
         &--left {
             top: 50%;
@@ -44,62 +44,69 @@
             transform: translate(100%, -50%);
         }
     }
-    .background {
+    .img {
         position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        &--top {
-            // transform: translateY(100%);
-            background: linear-gradient(
-                180deg,
-                hsla(210, 38%, 8%, 0) 0%,
-                hsla(210, 38%, 8%, 0.1) 10%,
-                hsla(210, 38%, 8%, 0.2) 20%,
-                hsla(210, 38%, 8%, 0.3) 30%,
-                hsla(210, 38%, 8%, 0.4) 40%,
-                hsla(210, 38%, 8%, 0.5) 50%,
-                hsla(210, 38%, 8%, 0.6) 60%,
-                hsla(210, 38%, 8%, 0.7) 70%
-            );
+        z-index: -1;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        .background {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            &--top {
+                transform: translateY(100%);
+                background: linear-gradient(
+                    180deg,
+                    hsla(210, 38%, 8%, 0) 0%,
+                    hsla(210, 38%, 8%, 0.1) 10%,
+                    hsla(210, 38%, 8%, 0.2) 20%,
+                    hsla(210, 38%, 8%, 0.3) 30%,
+                    hsla(210, 38%, 8%, 0.4) 40%,
+                    hsla(210, 38%, 8%, 0.5) 50%,
+                    hsla(210, 38%, 8%, 0.6) 60%,
+                    hsla(210, 38%, 8%, 0.7) 70%
+                );
+            }
+            &--left {
+                transform: translateX(-100%);
+                background: linear-gradient(
+                    270deg,
+                    hsla(210, 38%, 8%, 0) 0%,
+                    hsla(210, 38%, 8%, 0.1) 10%,
+                    hsla(210, 38%, 8%, 0.2) 20%,
+                    hsla(210, 38%, 8%, 0.3) 30%,
+                    hsla(210, 38%, 8%, 0.4) 40%,
+                    hsla(210, 38%, 8%, 0.5) 50%,
+                    hsla(210, 38%, 8%, 0.6) 60%,
+                    hsla(210, 38%, 8%, 0.7) 70%
+                );
+            }
         }
-        &--left {
-            background: linear-gradient(
-                270deg,
-                hsla(210, 38%, 8%, 0) 0%,
-                hsla(210, 38%, 8%, 0.1) 10%,
-                hsla(210, 38%, 8%, 0.2) 20%,
-                hsla(210, 38%, 8%, 0.3) 30%,
-                hsla(210, 38%, 8%, 0.4) 40%,
-                hsla(210, 38%, 8%, 0.5) 50%,
-                hsla(210, 38%, 8%, 0.6) 60%,
-                hsla(210, 38%, 8%, 0.7) 70%
-            );
+        img {
+            position: relative;
+            max-width: min(90vw, 460px);
+            max-height: min(60vh, 420px);
         }
     }
     .card {
         height: 100%;
     }
-    img {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 95%;
-        max-height: 95%;
-    }
     .about {
-        position: relative;
+        position: absolute;
         z-index: 2;
-        height: 100%;
+        width: 100%;
+        min-height: 50%;
+        bottom: 0;
         padding: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: stretch;
+        background-color: $background3;
     }
     .name {
         padding-left: 10px;
@@ -118,6 +125,7 @@
     }
     .description {
         margin-top: 1rem;
+        margin-bottom: 2rem;
         padding-left: 10px;
     }
     .link {
@@ -127,7 +135,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        span{
+        span {
             margin: 0 auto;
         }
         svg {
@@ -137,7 +145,7 @@
             stroke: $lighted;
         }
         &:first-of-type {
-            margin-top: 2rem;
+            margin-top: auto;
         }
     }
 }

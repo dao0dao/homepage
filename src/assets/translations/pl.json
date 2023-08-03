@@ -38,7 +38,7 @@
     "projectNestCourtReservation": {
         "name": "Rezerwacja kortów",
         "techStack": "NestJS, MySQL, Angular15",
-        "description": "W tym projekcie możesz dodawać i edytować graczy w bazie danych, w tym tworzyć dla nich wirtualne konta. Możesz również tworzyć różne usługi, dodawać, edytować i usuwać wpisy w grafiku."
+        "description": "W tym projekcie możesz dodawać i edytować graczy w bazie danych, w tym tworzyć dla nich wirtualne konta. Możesz również tworzyć różne usługi, dodawać, edytować i usuwać wpisy w grafiku. Jeżeli chcesz uzyskać dostęp do tego projektu- skontaktuj się ze mną"
     },
     "projectTournament": {
         "name": "Drabinka turniejowa",
