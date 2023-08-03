@@ -1,0 +1,96 @@
+{
+    "navigation": {
+        "about": "About me",
+        "contact": "Contact",
+        "portfolio": "Projects",
+        "language": "language"
+    },
+    "headers": {
+        "home": "Home",
+        "about": "About me",
+        "project": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "welcome": "Hi, my name's",
+        "name": "Demid Greshnikov",
+        "subtitle": "I'm fronted developer",
+        "introduce": "Let me introduce myself"
+    },
+    "about": {
+        "coding": "//Coding is not just my job, but above all, my passion.",
+        "learning": "//I have the ability to effectively and regularly self-educate.",
+        "inventive": "//I am creative and I enjoy new, unconventional solutions.",
+        "country": "Poland",
+        "softPressure": "ability to work under time pressure",
+        "softAnalytic": "analytic skills",
+        "softTeamPlayer": "team player",
+        "softThinking": "critical thinking",
+        "softProblem": "problem solving",
+        "english": "English",
+        "polish": "Polish",
+        "russian": "Russian"
+    },
+    "project":{
+        "code": "Code",
+        "live": "Website"
+    },
+    "projectNestCourtReservation": {
+        "name": "Court reservation",
+        "techStack": "NestJS, MySQL, Angular15",
+        "description": "In this project you can add and edit players in the database, including creating virtual accounts for them services. Also you can create various services, adding, editing, and deleting entries in the schedule. If you want to get access to this project - please contact me"
+    },
+    "projectTournament": {
+        "name": "Simple tournament",
+        "techStack": "Angular, Angular Material, Firebase",
+        "description": "On this page, you can add users who have previously registered to the tournament. The tournament is played in a single-elimination format."
+    },
+    "projectHomePageV1":{
+        "name": "Homepage v1",
+        "techStack": "HTML, JS, SCSS, RWD",
+        "description": "First version of my homepage"
+    },
+    "projectReservationSystem": {
+        "name": "Court reservation",
+        "techStack": "Angular, Firebase",
+        "description": "This is first beta version of court reservation project"
+    },
+    "projectClubGo": {
+        "name": "Toruń's club go",
+        "techStack": "HTML, JS, CSS, RWD",
+        "description": "I'm the co-creator of the official website of the Toruń Go Club."
+    },
+    "projectShop": {
+        "name": "Simple shop",
+        "techStack": "NodeJS, ExpressJS, EJS, MySQL",
+        "description": "Here you can buy some fake products. As an admin you can add, edit or delete products"
+    },
+    "projectAngularBlog": {
+        "name": "Some simple blog",
+        "techStack": "Angular, API, Firebase, RxJS",
+        "description": "This is my first experience with an API in Angular. I know it doesn't look pretty ;)"
+    },
+    "projectAngularRouting": {
+        "name": "Angular routing",
+        "techStack": "Angular",
+        "description": "First time using Angular routing. You can try to find the cat on this page ;)"
+    },
+    "projectToDO": {
+        "name": "To do list",
+        "techStack": "Angular, Angular Material",
+        "description": "My first experience in Angular"
+    },
+    "projectWeatherApp": {
+        "name": "Weather App",
+        "techStack": "HTML, CSS, API",
+        "description": "My first attempt with API"
+    },
+    "projectWebsite": {
+        "name": "Website of fake company",
+        "techStack": "Bootstrap, Animate.css, JS, RWD",
+        "description": "My first steps in IT like frontend developer"
+    },
+    "contact": {
+        "find": "Find me online:"
+    }
+}
