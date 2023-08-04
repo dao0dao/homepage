@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
+import { LinkPipe } from '../pipes/link.pipe';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  constructor() {}
+  constructor(private linkPipe: LinkPipe) {}
+  @HostBinding('style.background-image') backgroundImage =
+    'url(' + this.linkPipe.transform('/assets/images/3.png') + ')';
 }

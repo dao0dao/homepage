@@ -15,6 +15,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TranslateDirective } from './directives/translate.directive';
 import { PortfolioPopUpComponent } from './portfolio/portfolio-pop-up/portfolio-pop-up.component';
 import { ContactComponent } from './contact/contact.component';
+import { LinkPipe } from './pipes/link.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     TranslateDirective,
     PortfolioPopUpComponent,
     ContactComponent,
+    LinkPipe,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [LinkPipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

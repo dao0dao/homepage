@@ -48,14 +48,6 @@
                   "maximumError": "4kb"
                 }
               ],
-              "assets": [
-                "src/assets",
-                {
-                  "glob": "homepage/assets/images/*",
-                  "input": "src/assets/images",
-                  "output": "/assets/images"
-                }
-              ],
               "outputHashing": "all",
               "baseHref": "https://dao0dao.github.io/homepage/"
             },
