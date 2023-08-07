@@ -100,7 +100,7 @@ body {
         position: relative;
         &::before {
             position: absolute;
-            right: calc(80vw - 20px);
+            right: calc(80vw - 18px);
             display: block;
             content: attr(line);
             color: $muted;
