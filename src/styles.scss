@@ -4,9 +4,7 @@
     // scroll-behavior: smooth;
     font-size: 18px;
     font-weight: 400;
-    height: -webkit-fill-available;
-    height: fill-available;
-    height: stretch;
+    height: 100svh;
     // scrollbar-width: thin;
     // scrollbar-color: $background1 $background2;
 }
@@ -23,13 +21,11 @@
     }
 }
 body {
-    height: -webkit-fill-available;
-    height: fill-available;
-    height: stretch;
     padding: 0 calc((100vw - 1920px) / 2);
     background-color: $black;
     font-family: "Ubuntu mono", monospace;
     color: $text;
+    height: 100svh;
 }
 .link {
     color: $lighted;
